@@ -1,3 +1,4 @@
+EDIT_MODE = False
 info = {
     # Foundation Courses (All required)
     # "CSCI 1000" : {
@@ -9,7 +10,7 @@ info = {
     # },
     "CSCI 1300" : {
         "name" : "Computer Science 1: Starting Computing",
-        "credits" : 4,
+        "credits" : 3,
         "prequisites" : [],
         "corequisites" : ["MATH 1300"], # ...
         "completed" : True,
@@ -25,20 +26,20 @@ info = {
         "name" : "Computer Systems",
         "credits" : 4,
         "prequisites" : ["CSCI 2270"], # ...
-        "corequisites" : ["MATH 2001"], # ...
+        "corequisites" : ["APPM 3170"], # ...
         "completed" : False,
     },
     "CSCI 3104" : {
         "name" : "Algorithms",
         "credits" : 4,
-        "prequisites" : ["CSCI 2270", "MATH 2300", "MATH 2001"], # ...
+        "prequisites" : ["CSCI 2270", "MATH 2300", "APPM 3170"], # ...
         "corequisites" : [],
         "completed" : False,
     },
     "CSCI 3155" : {
         "name" : "Principles of Programming Languages",
         "credits" : 4,
-        "prequisites" : ["CSCI 2270", "MATH 2001"], # ...
+        "prequisites" : ["CSCI 2270", "APPM 3170"], # ...
         "corequisites" : [],
         "completed" : False,
     },
@@ -63,7 +64,7 @@ info = {
     "CSCI 3202" : {
         "name" : "Introduction to Artificial Intelligence",
         "credits" : 3,
-        "prequisites" : ["CSCI 2270", "MATH 3510", "MATH 2001"], # ...
+        "prequisites" : ["CSCI 2270", "MATH 4510", "APPM 3170"], # ...
         "corequisites" : [],
         "completed" : False,
     },
@@ -77,21 +78,21 @@ info = {
     "CSCI 3302" : {
         "name" : "Introduction to Robotics",
         "credits" : 3,
-        "prequisites" : ["CSCI 2270", "MATH 2001"], # ...
+        "prequisites" : ["CSCI 2270", "APPM 3170"], # ...
         "corequisites" : [],
         "completed" : False,
     },
-    # "CSCI 3434" : {
-    #     "name" : "Theory of Computation",
-    #     "credits" : 3,
-    #     "prequisites" : ["CSCI 3104", "CSCI 3155"], # ...
-    #     "corequisites" : [],
-    #     "completed" : False,
-    # },
+    "CSCI 3434" : {
+        "name" : "Theory of Computation",
+        "credits" : 3,
+        "prequisites" : ["CSCI 3104", "CSCI 3155"], # ...
+        "corequisites" : [],
+        "completed" : False,
+    },
     "CSCI 3656" : {
         "name" : "Numerical Computation",
         "credits" : 3,
-        "prequisites" : ["CSCI 1300", "MATH 1300", "MATH 2300", "MATH 3130"], # ...
+        "prequisites" : ["CSCI 1300", "MATH 1300", "MATH 2300", "MATH 2130"], # ...
         "corequisites" : [],
         "completed" : False,
     },
@@ -109,13 +110,13 @@ info = {
         "corequisites" : [],
         "completed" : False,
     },
-    # "CSCI 4229" : {
-    #     "name" : "Computer Graphics",
-    #     "credits" : 3,
-    #     "prequisites" : ["CSCI 2270"], # ...
-    #     "corequisites" : [],
-    #     "completed" : False,
-    # },
+    "CSCI 4229" : {
+        "name" : "Computer Graphics",
+        "credits" : 3,
+        "prequisites" : ["CSCI 2270"], # ...
+        "corequisites" : [],
+        "completed" : False,
+    },
     # "CSCI 4239" : {
     #     "name" : "Advanced Computer Graphics",
     #     "credits" : 3,
@@ -123,13 +124,13 @@ info = {
     #     "corequisites" : [],
     #     "completed" : False,
     # },
-    "CSCI 4239" : {
-        "name" : "Datacenter Scale Computing - Methods, Systems and Techniques",
-        "credits" : 3,
-        "prequisites" : ["CSCI 3753"], # 57-180 credits
-        "corequisites" : [],
-        "completed" : False,
-    },
+    # "CSCI 4253" : {
+    #     "name" : "Datacenter Scale Computing - Methods, Systems and Techniques",
+    #     "credits" : 3,
+    #     "prequisites" : ["CSCI 3753"], # 57-180 credits
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
     # "CSCI 4273" : {
     #     "name" : "Network Systems",
     #     "credits" : 3,
@@ -137,13 +138,13 @@ info = {
     #     "corequisites" : [],
     #     "completed" : False,
     # },
-    # "CSCI 4302" : {
-    #     "name" : "Advanced Robotics",
-    #     "credits" : 3,
-    #     "prequisites" : ["CSCI 3302"],
-    #     "corequisites" : [],
-    #     "completed" : False,
-    # },
+    "CSCI 4302" : {
+        "name" : "Advanced Robotics",
+        "credits" : 3,
+        "prequisites" : ["CSCI 3302"],
+        "corequisites" : [],
+        "completed" : False,
+    },
     # "CSCI 4413" : {
     #     "name" : "Computer Security and Ethical Hacking",
     #     "credits" : 3,
@@ -186,13 +187,13 @@ info = {
         "corequisites" : [],
         "completed" : False,
     },
-    "CSCI 4586" : {
-        "name" : "High-Performance Scientific Computing 2",
-        "credits" : 4,
-        "prequisites" : ["CSCI 4576"],
-        "corequisites" : [],
-        "completed" : False,
-    },
+    # "CSCI 4586" : {
+    #     "name" : "High-Performance Scientific Computing 2",
+    #     "credits" : 4,
+    #     "prequisites" : ["CSCI 4576"],
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
     # "CSCI 4586" : {
     #     "name" : "Computer Organization",
     #     "credits" : 3,
@@ -221,48 +222,62 @@ info = {
     #     "corequisites" : [],
     #     "completed" : False,
     # },
-    "ECEN 2350" : {
-        "name" : "Digital Logic",
-        "credits" : 3,
-        "prequisites" : ["CSCI 1300"],
-        "corequisites" : [],
-        "completed" : False,
-    },
+    # "ECEN 2350" : {
+    #     "name" : "Digital Logic",
+    #     "credits" : 3,
+    #     "prequisites" : ["CSCI 1300"],
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
 # 62
 
     # Mathematics
+    "APPM 3170" : {
+        "name" : "Discrete Structures",
+        "credits" : 3,
+        "prequisites" : [],
+        "corequisites" : ["MATH 2400"],
+        "completed" : False,
+    },
     "MATH 1300" : {
         "name" : "Calculus 1",
-        "credits" : 5,
+        "credits" : 4,
         "prequisites" : [],
         "corequisites" : [],
         "completed" : True,
     },
     "MATH 2300" : {
         "name" : "Calculus 2",
-        "credits" : 5,
+        "credits" : 4,
         "prequisites" : ["MATH 1300"],
         "corequisites" : [],
         "completed" : True,
     },
-    "MATH 2001" : {
-        "name" : "Introduction to Discrete Mathematics",
-        "credits" : 3,
-        "prequisites" : ["MATH 1300"],
-        "corequisites" : [],
-        "completed" : False,
-    },
-    "MATH 3130" : {
+    # "MATH 2001" : {
+    #     "name" : "Introduction to Discrete Mathematics",
+    #     "credits" : 3,
+    #     "prequisites" : ["MATH 1300"],
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
+    "MATH 2130" : {
         "name" : "Introduction to Linear Algebra",
         "credits" : 3,
         "prequisites" : ["MATH 2300"],
         "corequisites" : [],
         "completed" : False,
     },
-    "MATH 3510" : {
-        "name" : "Introduction to Probability and Statistics",
+    # "MATH 3510" : {
+    #     "name" : "Introduction to Probability and Statistics",
+    #     "credits" : 3,
+    #     "prequisites" : ["MATH 2001", "MATH 2300"],
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
+    "MATH 4510" : {
+        "name" : "Introduction to Probability Theory",
         "credits" : 3,
-        "prequisites" : ["MATH 2001", "MATH 2300"],
+        "prequisites" : ["MATH 2400", "MATH 2130"],
         "corequisites" : [],
         "completed" : False,
     },
@@ -275,22 +290,22 @@ info = {
         "corequisites" : [],
         "completed" : False,
     },
-    "MATH 4650" : {
-        "name" : "Intermediate Numerical Analysis 1",
-        "credits" : 3,
-        "prequisites" : ["MATH 3130"],
-        "corequisites" : [],
-        "completed" : False,
-    },
+    # "MATH 4650" : {
+    #     "name" : "Intermediate Numerical Analysis 1",
+    #     "credits" : 3,
+    #     "prequisites" : ["MATH 2130"],
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
 
     # for math major
-    "MATH 3430" : {
-        "name" : "Ordinary Differential Equations",
-        "credits" : 3,
-        "prequisites" : ["MATH 2400", "MATH 3130"],
-        "corequisites" : [],
-        "completed" : False,
-    },
+    # "MATH 3430" : {
+    #     "name" : "Ordinary Differential Equations",
+    #     "credits" : 3,
+    #     "prequisites" : ["MATH 2400", "MATH 2130"],
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
     # "MATH 3001" : {
     #     "name" : "Analysis 1",
     #     "credits" : 3,
@@ -301,7 +316,7 @@ info = {
     # "MATH 3140" : {
     #     "name" : "Abstract Algebra 1",
     #     "credits" : 3,
-    #     "prequisites" : ["MATH 2001", "MATH 3130"],
+    #     "prequisites" : ["MATH 2001", "MATH 2130"],
     #     "corequisites" : [],
     #     "completed" : False,
     # },
@@ -336,13 +351,13 @@ info = {
         "corequisites" : [],
         "completed" : True,
     },
-    "PHIL 2440" : {
-        "name" : "Symbolic Logic",
-        "credits" : 3,
-        "prequisites" : [],
-        "corequisites" : [],
-        "completed" : False,
-    },
+    # "PHIL 2440" : {
+    #     "name" : "Symbolic Logic",
+    #     "credits" : 3,
+    #     "prequisites" : [],
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
     "ECON 2010" : {
         "name" : "Principles of Microeconomics",
         "credits" : 4,
@@ -350,7 +365,14 @@ info = {
         "corequisites" : [],
         "completed" : False,
     },
-    "CSCI 4239" : {
+    "ECON 2020" : {
+        "name" : "Principles of Microeconomics",
+        "credits" : 4,
+        "prequisites" : ["ECON 2010"],
+        "corequisites" : [],
+        "completed" : False,
+    },
+    "CSCI 4250" : {
         "name" : "Computer Science: the Canon",
         "credits" : 3,
         "prequisites" : [], # 57-180 credits
@@ -364,15 +386,18 @@ info = {
         "corequisites" : [],
         "completed" : False,
     },
-    "MATH 4820" : {
-        "name" : "History of Mathematical Ideas",
-        "credits" : 3,
-        "prequisites" : ["MATH 2001", "MATH 3130"],
-        "corequisites" : [],
-        "completed" : False,
-    },
+    # "MATH 4820" : {
+    #     "name" : "History of Mathematical Ideas",
+    #     "credits" : 3,
+    #     "prequisites" : ["MATH 2001", "MATH 2130"],
+    #     "corequisites" : [],
+    #     "completed" : False,
+    # },
 
     # Computer Science Electives
+
+
+    # Free electives (12 credits)
     "CSCI 4999TC" : {
         "name" : "Algorithms and Data Structures",
         "credits" : 3,
@@ -380,9 +405,6 @@ info = {
         "corequisites" : [],
         "completed" : True,
     },
-
-
-    # Free electives (12 credits)
     "CSCI 2999" : {
         "name" : "Intro to Computer Science",
         "credits" : 3,
@@ -434,7 +456,7 @@ info = {
         "corequisites" : ["CHEM 1134"],
         "completed" : True,
     },
-    "CHEM 1114" : {
+    "CHEM 1134" : {
         "name" : "Laboratory in General Chemistry 2",
         "credits" : 1,
         "prequisites" : ["CHEM 1113", "CHEM 1114"],
@@ -459,23 +481,100 @@ info = {
     },
 }
 
-completed_credits = 0
-total_credits = 0
-unlocked_courses = []
-corequisites = set([])
+cs_electives = []
+cs_elective_credits = 0
 for k, v in info.items():
-    total_credits += v["credits"]
-    if v["completed"]:
-        completed_credits += v["credits"]
-    elif v["prequisites"]:
-        if all([info[p]["completed"] for p in v["prequisites"]]):
+    print(k, v["credits"], v["name"])
+    if "CSCI" in k:
+        cs_electives.append(k)
+
+print("\n\n")
+
+print("CS ELECTIVES:")
+for course in cs_electives[:-5]:
+    cs_elective_credits += info[course]["credits"]
+    print(course, info[course]["credits"], info[course]["name"])
+print("TOTAL CS ELECTIVE CREDITS:", cs_elective_credits)
+
+
+print("\n\n")
+
+def showSemester(info, courses):
+    completed_credits = 0
+    total_credits = 0
+    unlocked_courses = []
+    corequisites = set([])
+    for k, v in info.items():
+        total_credits += v["credits"]
+        if v["completed"]:
+            completed_credits += v["credits"]
+        elif v["prequisites"]:
+            if all([info[p]["completed"] for p in v["prequisites"]]):
+                unlocked_courses.append(k)
+                corequisites.update(v["corequisites"])
+        else:
             unlocked_courses.append(k)
             corequisites.update(v["corequisites"])
-    else:
-        unlocked_courses.append(k)
-        corequisites.update(v["corequisites"])
 
-print("COMPLETED CREDITS:", completed_credits)
-print("TOTAL CREDITS:", total_credits)
-print("UNLOCKED COURSES:", unlocked_courses)
-print("COREQUISITES:", corequisites)
+    if EDIT_MODE:
+        print("COMPLETED CREDITS:", completed_credits)
+        print("TOTAL CREDITS:", total_credits)
+        print("UNLOCKED COURSES:", unlocked_courses)
+        print("COREQUISITES:", corequisites)
+        print()
+
+    semester_credits = 0
+    for course in courses:
+        if course in unlocked_courses or info[course]["completed"]:
+            info[course]["completed"] = True
+            semester_credits += info[course]["credits"]
+            print(course, info[course]["credits"], info[course]["name"])
+        else:
+            raise Exception(course, "is not unlocked")
+    print("SEMESTER CREDITS:", semester_credits)
+
+
+    print("\n\n")
+
+def showRemainder(info):
+    for k, v in info.items():
+        if not v["completed"]:
+            print(k, v["credits"], v["name"])
+
+print("- FALL 2016 -")
+showSemester(info, ["WRTG 1150", "CSCI 2999", "ANTH 1999TC", "PHIL 1000"])
+
+print("- SPRING 2017 -")
+showSemester(info, ["CSCI 1300", "MATH 1300", "MATH 2300", "HIST 1015", "CSCI 4999TC"])
+
+print("- SUMMER 2017 -")
+showSemester(info, ["CHEM 1113", "CHEM 1114", "CHEM 1133", "CHEM 1134"])
+
+print("- FALL 2017 -")
+showSemester(info, ["APPM 3170", "CSCI 2270", "MATH 2130", "MATH 2400"])
+
+print("- SPRING 2018 -")
+showSemester(info, ["CSCI 2400", "CSCI 3104", "CSCI 3155", "CSCI 3308", "MATH 4510"])
+
+print("- SUMMER 2018 -")
+showSemester(info, ["ECON 2010"])
+
+print("- FALL 2018 -")
+showSemester(info, ["PHYS 1110", "CSCI 3434", "CSCI 3202", "CSCI 3287", "CSCI 3302"])
+
+print("- SPRING 2019 -")
+showSemester(info, ["WRTG 3030", "PHYS 1120", "CSCI 3753", "CSCI 3656", "CSCI 4446"])
+
+print("- SUMMER 2019 -")
+showSemester(info, ["ECON 2020"])
+
+print("- FALL 2019 -")
+showSemester(info, ["CSCI 4950", "CSCI 4250", "CSCI 4576", "CSCI 3100", "CSCI 4229"])
+
+print("- SPRING 2020 -")
+showSemester(info, ["CSCI 4950", "CSCI 4302", "CSCI 4753", "CSCI 4448"])
+
+if EDIT_MODE:
+    print("- REMAINDER -")
+    showSemester(info, [])
+    showRemainder(info)
